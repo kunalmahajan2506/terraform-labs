@@ -5,7 +5,7 @@ provider "aws" {
 module "web_server" {
   source = "../modules/ec2"
 
-  ami_id        = "ami-xxxxxxxx"
-  instance_type = "t2.micro"
-  name          = "my-"
+  ami_id        = "var.ami_id"
+  instance_type = "var.instance_type"
+  name          = "var.instance_name"
 }
