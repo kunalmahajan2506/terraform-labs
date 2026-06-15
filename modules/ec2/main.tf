@@ -3,6 +3,6 @@ resource "aws_instance" "this" {
   instance_type = var.instance_type
 
   tags = {
-    Name = var.name
+    instance_name = var.instance_name
   }
 }
